@@ -1,0 +1,14 @@
+# Data Manipulation
+numpy
+pandas
+
+# Scraping
+scrapy
+scrapyrt
+
+# Visualisatoin
+plotly
+dash
+
+# Logging
+logzero

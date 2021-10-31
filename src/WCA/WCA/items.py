@@ -6,7 +6,7 @@
 import scrapy
 
 
-class WcascrapyItem(scrapy.Item):
+class WcaItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass

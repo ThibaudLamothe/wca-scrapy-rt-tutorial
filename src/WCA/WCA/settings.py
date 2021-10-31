@@ -1,4 +1,4 @@
-# Scrapy settings for wcascrapy project
+# Scrapy settings for WCA project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'wcascrapy'
+BOT_NAME = 'WCA'
 
-SPIDER_MODULES = ['wcascrapy.spiders']
-NEWSPIDER_MODULE = 'wcascrapy.spiders'
+SPIDER_MODULES = ['WCA.spiders']
+NEWSPIDER_MODULE = 'WCA.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'wcascrapy (+http://www.yourdomain.com)'
+#USER_AGENT = 'WCA (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'wcascrapy.middlewares.WcascrapySpiderMiddleware': 543,
+#    'WCA.middlewares.WcaSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'wcascrapy.middlewares.WcascrapyDownloaderMiddleware': 543,
+#    'WCA.middlewares.WcaDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'wcascrapy.pipelines.WcascrapyPipeline': 300,
+#    'WCA.pipelines.WcaPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

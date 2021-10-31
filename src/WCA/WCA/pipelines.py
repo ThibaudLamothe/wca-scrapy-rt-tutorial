@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class WcascrapyPipeline:
+class WcaPipeline:
     def process_item(self, item, spider):
         return item

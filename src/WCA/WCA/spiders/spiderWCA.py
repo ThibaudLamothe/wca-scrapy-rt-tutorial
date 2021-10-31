@@ -7,7 +7,7 @@ class spiderWCA(scrapy.Spider):
 
     def parse(self, response):
 
-        name = response.css('div#person h2 ::text').extract_first().strip()
+        # name = response.css('div#person h2 ::text').extract_first().strip()
         rows = response.css('div.results-by-event table tbody.event-333 tr.result')
         for row in rows:
             competition=row.css('td.competition a::text').extract()
@@ -17,12 +17,12 @@ class spiderWCA(scrapy.Spider):
                 'avg'    :row.css('td.average::text').extract_first().strip(),
                 'round': row.css('td.round ::text').extract_first(),
                 'competition': competition,
-                'name':name,
-                'profile':response.url
+                # 'name':name,
+                # 'profile':response.url
                 }
 
         # Generic information
-        yield {
-            'name' : response.css('div#person h2 ::text').extract_first().strip(),
-            'profile' : response.url
-        }
+        # yield {
+        #     'name' : response.css('div#person h2 ::text').extract_first().strip(),
+        #     'profile' : response.url
+        # }
